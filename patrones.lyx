@@ -303,11 +303,6 @@ Principio de usabilidad: Se guía al usuario dándole control de la interacción
  
 \end_layout
 
-\begin_layout Itemize
-Problema: El usuario tiene dificultades para acceder directamente a las
- ventanas del sistema informático y desconoce cuál(es) de entre ellas es
- la ventana actual de trabajo.
-\end_layout
 
 \begin_layout Itemize
 Fuerza: Un navegador web debe siempre mostrar la lista de ventanas navegables
