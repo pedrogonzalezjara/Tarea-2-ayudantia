@@ -237,10 +237,10 @@ Iterator: Proporciona un modo de acceder secuencialmente a los elementos
 
 \begin_layout Itemize
 Mediator: Define un objeto que encapsula cómo interactúan un conjunto de
- objetos.
+ objetos.    
  Promueve un bajo acoplamiento al evitar que los objetos se refieran unos
  a otros explícitamente, y permite variar la interacción entre ellos de
- forma independiente.
+ forma independiente.   
  
 \end_layout
 
