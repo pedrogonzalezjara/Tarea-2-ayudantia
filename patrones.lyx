@@ -277,15 +277,9 @@ Template Method: Define en una operación el esqueleto de un algoritmo, delegand
  en las subclases algunos de sus pasos.
  Permite que las subclases redefinan ciertos pasos del algoritmo sin cambiar
  su estructura.
- • 
+
 \end_layout
 
-\begin_layout Itemize
-Visitor: Representa una operación sobre los elementos de una estructura
- de objetos.
- Permite definir una nueva operación sin cambiar las clases de los elementos
- sobre los que opera
-\end_layout
 
 \begin_layout Subsection
 Ejemplos de la Vida Diaria
