@@ -1,0 +1,352 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+\size giant
+Patrones de Diseño
+\end_layout
+
+\begin_layout Author
+Pedro Gonzalez Jara - Andres Mardones - Camilo Candia
+\end_layout
+
+\begin_layout Date
+14 de mayo de 2014
+\end_layout
+
+\begin_layout Section
+¿Qué son los Patrones de Diseño?
+\end_layout
+
+\begin_layout Standard
+Los patrones de diseño son el esqueleto de las soluciones a problemas comunes
+ en el desarrollo de software, en otras palabras, brindan una solución ya
+ probada y documentada a problemas de desarrollo de software que están sujetos
+ a contextos similares.
+\end_layout
+
+\begin_layout Standard
+Estos patrones de diseño proporcionan plantillas reusables en el diseño
+ de sistemas software, por esta razón se trata de evitar la reiteración
+ en la búsqueda de una solución a un problema ya conocido o resuelto anteriormen
+te, también con el uso de estos patrones se pretende formalizar un vocabulario
+ común entre los diseñadores, estandarizar el modo en que se realiza el
+ diseño y facilitar el aprendizaje de las nuevas generaciones condensando
+ el conocimiento ya existente.
+\end_layout
+
+\begin_layout Standard
+Los patrones de diseño no son fáciles de entender, pero una vez entendido
+ su funcionamiento, los diseños serán mucho más flexibles, modulares y reutiliza
+bles.
+ Han revolucionado el diseño orientado a objetos y todo buen ingeniero de
+ software debería conocerlos.
+\end_layout
+
+\begin_layout Standard
+A continuación una lista con los patrones de diseño a objetos más habituales
+ publicados en el libro "Design Patterns", escrito por los que comúnmente
+ se conoce como GoF (gang of four, "pandilla de los cuatro").
+ 
+\end_layout
+
+\begin_layout Subsection
+Patrones de Creación
+\end_layout
+
+\begin_layout Itemize
+Abstract Factory: Proporciona una interfaz para crear familias de objetos
+ o que dependen entre sí, sin especificar sus clases concretas.
+\end_layout
+
+\begin_layout Itemize
+Builder: Separa la construcción de un objeto complejo de su representación,
+ de forma que el mismo proceso de construcción pueda crear diferentes representa
+ciones.
+\end_layout
+
+\begin_layout Itemize
+Factory Method: Define una interfaz para crear un objeto, pero deja que
+ sean las subclases quienes decidan qué clase instanciar.
+ Permite que una clase delegue en sus subclases la creación de objetos.
+\end_layout
+
+\begin_layout Itemize
+Prototype: Especifica los tipos de objetos a crear por medio de una instancia
+ prototípica, y crear nuevos objetos copiando este prototipo.
+\end_layout
+
+\begin_layout Itemize
+Singleton: Garantiza que una clase sólo tenga una instancia, y proporciona
+ un punto de acceso global a ella.
+\end_layout
+
+\begin_layout Subsection
+Patrones Estructurales
+\end_layout
+
+\begin_layout Itemize
+Adapter: Convierte la interfaz de una clase en otra distinta que es la que
+ esperan los clientes.
+ Permiten que cooperen clases que de otra manera no podrían por tener interfaces
+ incompatibles.
+ 
+\end_layout
+
+\begin_layout Itemize
+Bridge: Desvincula una abstracción de su implementación, de manera que ambas
+ puedan variar de forma independiente.
+ 
+\end_layout
+
+\begin_layout Itemize
+Composite: Combina objetos en estructuras de árbol para representar jerarquías
+ de parte-todo.
+ Permite que los clientes traten de manera uniforme a los objetos individuales
+ y a los compuestos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Decorator: Añade dinámicamente nuevas responsabilidades a un objeto, proporciona
+ndo una alternativa flexible a la herencia para extender la funcionalidad.
+ 
+\end_layout
+
+\begin_layout Itemize
+Facade: Proporciona una interfaz unificada para un conjunto de interfaces
+ de un subsistema.
+ Define una interfaz de alto nivel que hace que el subsistema se más fácil
+ de usar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Flyweight: Usa el compartimiento para permitir un gran número de objetos
+ de grano fino de forma eficiente.
+ 
+\end_layout
+
+\begin_layout Itemize
+Proxy: Proporciona un sustituto o representante de otro objeto para controlar
+ el acceso a éste.
+ 
+\end_layout
+
+\begin_layout Subsection
+Patrones de Comportamiento
+\end_layout
+
+\begin_layout Itemize
+Chain of Responsibility: Evita acoplar el emisor de una petición a su receptor,
+ al dar a más de un objeto la posibilidad de responder a la petición.
+ Crea una cadena con los objetos receptores y pasa la petición a través
+ de la cadena hasta que esta sea tratada por algún objeto.
+ 
+\end_layout
+
+\begin_layout Itemize
+Command: Encapsula una petición en un objeto, permitiendo así parametrizar
+ a los clientes con distintas peticiones, encolar o llevar un registro de
+ las peticiones y poder deshacer la operaciones.
+ 
+\end_layout
+
+\begin_layout Itemize
+Interpreter: Dado un lenguaje, define una representación de su gramática
+ junto con un intérprete que usa dicha representación para interpretar las
+ sentencias del lenguaje.
+ 
+\end_layout
+
+\begin_layout Itemize
+Iterator: Proporciona un modo de acceder secuencialmente a los elementos
+ de un objeto agregado sin exponer su representación interna.
+ 
+\end_layout
+
+\begin_layout Itemize
+Mediator: Define un objeto que encapsula cómo interactúan un conjunto de
+ objetos.
+ Promueve un bajo acoplamiento al evitar que los objetos se refieran unos
+ a otros explícitamente, y permite variar la interacción entre ellos de
+ forma independiente.
+ 
+\end_layout
+
+\begin_layout Itemize
+Memento: Representa y externaliza el estado interno de un objeto sin violar
+ la encapsulación, de forma que éste puede volver a dicho estado más tarde.
+ 
+\end_layout
+
+\begin_layout Itemize
+Observer: Define una dependencia de uno-a-muchos entre objetos, de forma
+ que cuando un objeto cambia de estado se notifica y actualizan automáticamente
+ todos los objetos.
+ 
+\end_layout
+
+\begin_layout Itemize
+State: Permite que un objeto modifique su comportamiento cada vez que cambia
+ su estado interno.
+ Parecerá que cambia la clase del objeto.
+ 
+\end_layout
+
+\begin_layout Itemize
+Strategy: Define una familia de algoritmos, encapsula uno de ellos y los
+ hace intercambiables.
+ Permite que un algoritmo varíe independientemente de los clientes que lo
+ usan.
+ 
+\end_layout
+
+\begin_layout Itemize
+Template Method: Define en una operación el esqueleto de un algoritmo, delegando
+ en las subclases algunos de sus pasos.
+ Permite que las subclases redefinan ciertos pasos del algoritmo sin cambiar
+ su estructura.
+ • 
+\end_layout
+
+\begin_layout Itemize
+Visitor: Representa una operación sobre los elementos de una estructura
+ de objetos.
+ Permite definir una nueva operación sin cambiar las clases de los elementos
+ sobre los que opera
+\end_layout
+
+\begin_layout Subsection
+Ejemplos de la Vida Diaria
+\end_layout
+
+\begin_layout Itemize
+Nombre: Es utilizada la retroalimentación (feedback) visual hacia el usuario
+ tanto en la navegación directa vía web o un determinado software.
+ 
+\end_layout
+
+\begin_layout Itemize
+Principio de usabilidad: Se guía al usuario dándole control de la interacción
+ al usuario a específicas funciones de un software.
+ 
+\end_layout
+
+\begin_layout Itemize
+Problema: El usuario tiene dificultades para acceder directamente a las
+ ventanas del sistema informático y desconoce cuál(es) de entre ellas es
+ la ventana actual de trabajo.
+\end_layout
+
+\begin_layout Itemize
+Fuerza: Un navegador web debe siempre mostrar la lista de ventanas navegables
+ y navegadas que ha hecho un usuario.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contexto: Se debe facilitar al usuario los medios para navegar directamente
+ entre las ventanas de un sistema informático.
+ 
+\end_layout
+
+\begin_layout Itemize
+Solución: Permitir al usuario a seleccionar directamente las ventana de
+ la interfaz y mostrar continuamente la ventana activa y desactivas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Consecuencias: El acceso directo a las ventanas del sistema no solo es beneficia
+da a la manipulación directa de ellas sino también la manipulación de los
+ objetos que retienen ya que cada ventana es definida en términos de sus
+ objetos de interacción (iconos, ítems de menú, botones) los cuales permiten
+ la obtención y la restablecimiento de información que es requerida por
+ el usuario.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Enlace Tarea 2 GitHub"
+target "https://github.com/pedrogonzalezjara/Tarea-2-ayudantia"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
